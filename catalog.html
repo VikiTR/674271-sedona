@@ -35,7 +35,7 @@
       <label>Парковка</label>
     </li>
     <li>
-      <input type="checkbox" name="wi-fi" id="wi-fi">
+      <input type="checkbox" name="wi-fi" id="filter-wi-fi">
       <label>Wi-fi</label>
     </li>
 </ul>
@@ -43,8 +43,27 @@
 </form>
 </section>
 <section class="type-housing">
-  <h2>Тип жилья:</h2>
-  <!-- Здесь будет форма  -->
+  <h2 class="visually-hidden">Тип жилья:</h2>
+  <form class="filter" metod="get"
+  action="https://echo.htmlacademy.ru">
+ <fieldset>
+   <legend>Тип жилья:</legend>
+   <ul>
+     <li>
+       <input type="checkbox" name="hotel" id="filter-hotel" checked>
+       <label>Гостиница</label>
+     </li>
+     <li>
+       <input type="checkbox" name="motel" id="filter-motel" checked>
+       <label>Мотель</label>
+     </li>
+     <li>
+       <input type="checkbox" name="apartment" id="filter-apartment" checked>
+       <label>Апартаменты</label>
+     </li>
+ </ul>
+ </fieldset>
+ </form>
 </section>
 <section class="cost">
   <h2>Стоимость в сутки (р):</h2>
