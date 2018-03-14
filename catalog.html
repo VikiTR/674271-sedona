@@ -20,8 +20,27 @@
 <main class="container">
   <h1 class="visually-hidden">Sedona-hostels</h1>
 <section class="infrastructure">
- <h2>Инфраструктура:</h2>
- <!-- Здесь будет форма  -->
+ <h2 class="visually-hidden">Инфраструктура:</h2>
+ <form class="filter" metod="get"
+ action="https://echo.htmlacademy.ru">
+<fieldset>
+  <legend>Инфраструктура:</legend>
+  <ul>
+    <li>
+      <input type="checkbox" name="pool" id="filter-pool" checked>
+      <label>Бассейн</label>
+    </li>
+    <li>
+      <input type="checkbox" name="parking" id="filter-parking">
+      <label>Парковка</label>
+    </li>
+    <li>
+      <input type="checkbox" name="wi-fi" id="wi-fi">
+      <label>Wi-fi</label>
+    </li>
+</ul>
+</fieldset>
+</form>
 </section>
 <section class="type-housing">
   <h2>Тип жилья:</h2>
