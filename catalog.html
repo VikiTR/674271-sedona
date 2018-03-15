@@ -20,19 +20,66 @@
 <main class="container">
   <h1 class="visually-hidden">Sedona-hostels</h1>
 <section class="infrastructure">
- <h2>Инфраструктура:</h2>
- <!-- Здесь будет форма  -->
+ <h2 class="visually-hidden">Инфраструктура:</h2>
+ <form class="filter" metod="get"
+ action="https://echo.htmlacademy.ru">
+<fieldset>
+  <legend>Инфраструктура:</legend>
+  <ul>
+    <li>
+      <input type="checkbox" name="pool" id="filter-pool" checked>
+      <label>Бассейн</label>
+    </li>
+    <li>
+      <input type="checkbox" name="parking" id="filter-parking">
+      <label>Парковка</label>
+    </li>
+    <li>
+      <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+      <label>Wi-fi</label>
+    </li>
+</ul>
+</fieldset>
 </section>
 <section class="type-housing">
-  <h2>Тип жилья:</h2>
-  <!-- Здесь будет форма  -->
+  <h2 class="visually-hidden">Тип жилья:</h2>
+ <fieldset>
+   <legend>Тип жилья:</legend>
+   <ul>
+     <li>
+       <input type="checkbox" name="hotel" id="filter-hotel" checked>
+       <label>Гостиница</label>
+     </li>
+     <li>
+       <input type="checkbox" name="motel" id="filter-motel" checked>
+       <label>Мотель</label>
+     </li>
+     <li>
+       <input type="checkbox" name="apartment" id="filter-apartment" checked>
+       <label>Апартаменты</label>
+     </li>
+ </ul>
+ </fieldset>
 </section>
 <section class="cost">
-  <h2>Стоимость в сутки (р):</h2>
-  <!-- Здесь будет форма  -->
+  <h2 class="visually-hidden">Стоимость в сутки (р):</h2>
+   <fieldset>
+     <legend>Стоимость в сутки:</legend>
+
+
+
+   </fieldset>
+    <button type="submit">Показать</button>
+  </form>
 </section>
 <section class="found">
-
+  <b>Найдено: 3</b>
+  <h2>Сортировка</h2>
+  <ul class="main-menu">
+              <li class="active"><a href="#price">По цене</a></li>
+              <li><a href="#type">По типу</a></li>
+              <li><a href="#rating">По рейтингу</a></li>
+          </ul>
 </section>
 <section class="hostel-typ">
   <h2 class="visually-hidden">Типы отелей</h2>
@@ -81,8 +128,7 @@
 </div>
 <p class="footer-website">
 <span class="letter">Website by</span>
-<img src="img/index.logo.svg" width="78" height="95" alt="Логотип HTML-Academy">
-<a href="https://htmlacademy.ru">html<br>academy</a>
+<a href="https://htmlacademy.ru"><img src="img/index.logo.svg" width="78" height="95" alt="Логотип HTML-Academy"></a>
 </p>
 </footer>
 </body>
