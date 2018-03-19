@@ -9,7 +9,7 @@ font-weight: 700;
 color: #333333;
 text-transform: uppercase;
 
-background-color: #ffffff;
+background-color: #f1f1f1;
 background-position: top center;
 background-repeat: repeat;
 }
@@ -32,13 +32,31 @@ a {
 
 .site-navigation a {
  color: #000000;
+ background-image: url(img/header-info-background.jpg);
 }
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover {
   color: #81b3d2;
+}
+.site-navigation a:active {
+  color: #bcbcbc;
 }
 .site-navigation .active {
   color: #766357;
+}
+
+.advantage {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.five-reasons {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
 }
 
 .reasons-list,
@@ -50,9 +68,131 @@ a {
   text-align: center;
 }
 
+
 .reasons-item h3,
 .conditions-item h3 {
   font-size: 18px;
   line-height: 21px;
-
 }
+
+.index-columns-1 {
+ color: #333333;
+
+ background-color: #ffffff;
+ background-position: 0 0;
+ background-repeat: repeat;
+}
+
+.interest {
+  font-size: 23px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.travel-date {
+  font-size: 12px;
+  line-height: 21px;
+  color: #333333;
+  text-align: center;
+}
+
+.hostels-button {
+ font: inherit;
+
+ width: 568;
+ min-height: 86;
+ text-align: center;
+ display: inline-block;
+ line-height: 86px;
+ color: #ffffff;
+ vertical-align: middle;
+ text-transform: uppercase;
+ vertical-align: baseline;
+
+ background-color: #766357;
+ border: none;
+}
+
+.hostels-button:hover {
+  background-color: #604e43;
+}
+.hostels-button:active {
+color: #857871;
+background-color: #503e33;
+}
+
+.main-footer {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url(img/footer-background.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+ list-style: none;
+}
+
+.footer-social a {
+  color: #000000;
+}
+
+.footer-website {
+  text-align: right;
+}
+
+.modal {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url(img/index-calender-background.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.search-hotels input[type="text"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: 2px solid #e5e5e5;
+}
+
+.search-hotels input:hover {
+  background-color: #ebebeb;
+}
+
+.search-hotels input:focus {
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+}
+
+.button-enter {
+  font: inherit;
+
+  width: 458;
+  min-height: 58;
+  text-align: center;
+  display: inline-block;
+  line-height: 58px;
+  color: #ffffff;
+  text-transform: uppercase;
+  vertical-align: baseline;
+
+  background-color: #81b3d2;
+  border: none;
+ }
+
+ .button-enter:hover {
+   background-color: #669ec0;
+ }
+ .button-enter:active {
+ color: #88b6d1;
+ background-color: #5496bd;
+ }
