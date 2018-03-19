@@ -196,3 +196,10 @@ background-color: #503e33;
  color: #88b6d1;
  background-color: #5496bd;
  }
+
+.parameter-selection {
+ background-color: #ffffff;
+ background-image: url(img/catalog-filter-background.jpg);
+ background-position: 0 0;
+ background-repeat: repeat;
+}
