@@ -68,7 +68,6 @@ a {
   text-align: center;
 }
 
-
 .reasons-item h3,
 .conditions-item h3 {
   font-size: 18px;
@@ -173,6 +172,16 @@ background-color: #503e33;
   border-color: #e5e5e5;
 }
 
+.for-font {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+}
+
 .button-enter {
   font: inherit;
 
@@ -196,7 +205,7 @@ background-color: #503e33;
  color: #88b6d1;
  background-color: #5496bd;
  }
-/*test*/
+
 .parameter-selection {
  background-color: #ffffff;
  background-image: url(img/catalog-filter-background.jpg);
