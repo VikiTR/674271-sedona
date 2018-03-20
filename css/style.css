@@ -180,8 +180,6 @@ background-color: #503e33;
   text-align: left;
 }
 
-}
-
 .button-enter {
   font: inherit;
 
@@ -211,4 +209,112 @@ background-color: #503e33;
  background-image: url(img/catalog-filter-background.jpg);
  background-position: 0 0;
  background-repeat: repeat;
+}
+
+.menu-hostels {
+  background-color: #ffffff;
+  background-image: url(img/catalog-hostels-background.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.type-housing legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.without-dots {
+  list-style: none;
+}
+
+.found h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.parameter-selection-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 2px solid wwhite;
+}
+
+.parameter-selection-button:hover {
+  color: 000000;
+  background-color: #ffffff;
+  border: none;
+}
+
+.detailed-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.detailed-button:hover {
+  background-color: #669ec0;
+}
+
+.detailed-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.book-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+}
+
+.book-button:hover {
+  background-color: #604e43;
+}
+
+.book-button:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+.hostels-sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.main-menu a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #d1d1d1;
+}
+
+.main-menu a:hover {
+  color: #c4dcea;
+}
+
+.main-menu a:active {
+color: #000000;
+
+}
+
+.main-menu {
+  list-style: none;
+}
+
+.active a {
+  color: 81b3d2;
 }
