@@ -22,13 +22,14 @@
 </header>
 <main class="container">
   <h1 class="visually-hidden">Sedona-hostels</h1>
+<div class="parameter-selection">
 <section class="infrastructure">
  <h2 class="visually-hidden">Инфраструктура:</h2>
  <form class="filter" metod="get"
  action="https://echo.htmlacademy.ru">
 <fieldset>
   <legend>Инфраструктура:</legend>
-  <ul>
+  <ul class="without-dots">
     <li>
       <input type="checkbox" name="pool" id="filter-pool" checked>
       <label>Бассейн</label>
@@ -48,7 +49,7 @@
   <h2 class="visually-hidden">Тип жилья:</h2>
  <fieldset>
    <legend>Тип жилья:</legend>
-   <ul>
+   <ul class="without-dots">
      <li>
        <input type="checkbox" name="hotel" id="filter-hotel" checked>
        <label>Гостиница</label>
@@ -72,12 +73,14 @@
 
 
    </fieldset>
-    <input type="submit" value="Показать">
+    <button type="submit" class="parameter-selection-button button">Показать</button>
   </form>
 </section>
+</div>
+<div class="menu-hostels">
 <section class="found">
-  <b>Найдено: 3</b>
-  <h2>Сортировка</h2>
+  <h3>Найдено: 3</h3>
+  <p class="hostels-sorting">Сортировка</p>
   <ul class="main-menu">
               <li class="active"><a href="#price">По цене</a></li>
               <li><a href="#type">По типу</a></li>
@@ -92,8 +95,8 @@
     <h3>Amara resort & SPA</h3>
      <p>Гостиница</p>
      <p>от 4000 р.</p>
-      <a class="button" href="detailed-amara.html">Подробнее</a>
-      <a class="button" href="book-amara.html">Забронировать</a>
+      <a class="detailed-button button" href="detailed-amara.html">Подробнее</a>
+      <a class="book-button  button" href="book-amara.html">Забронировать</a>
       <img src="img/5-stars.jpg" width="155" heigth="28" alt="Пять звезд">
        <span class="letter">Рейтинг: 8,5</span>
   </li>
@@ -102,8 +105,8 @@
     <h3>Desert Quail Inn</h3>
      <p>Мотель</p>
       <p>от 3000 р.</p>
-      <a class="button" href="detailed-desert.html">Подробнее</a>
-      <a class="button" href="book-desert.html">Забронировать</a>
+      <a class="detailed-button button" href="detailed-desert.html">Подробнее</a>
+      <a class="book-button button" href="book-desert.html">Забронировать</a>
        <img src="img/3-stars.jpg" width="93" heigth="28" alt="Три звезды">
        <span class="letter">Рейтинг: 8,9</span>
   </li>
@@ -112,13 +115,14 @@
     <h3>Villas at Poco Diablo</h3>
      <p>Апартаменты</p>
      <p>от 2000 р.</p>
-      <a class="button" href="detailed-villas.html">Подробнее</a>
-      <a class="button" href="book-villas.html">Забронировать</a>
+      <a class="detailed-button button" href="detailed-villas.html">Подробнее</a>
+      <a class="book-button button" href="book-villas.html">Забронировать</a>
        <img src="img/2-stars.jpg" width="62" heigth="28" alt="Две звезды">
        <span class="letter">Рейтинг: 9,2</span>
   </li>
 </ul>
 </section>
+</div>
 </main>
 <footer class="main-footer">
 <p>#VISITSEDONA</p>
