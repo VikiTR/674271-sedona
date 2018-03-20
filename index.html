@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -11,7 +14,7 @@
           <img src="img/index.logo.svg" width="115" height="96" alt="Логотип седоны">
         </a>
 <ul class="site-navigation">
-  <li><a href="info.html">Информация</a></li>
+  <li><a href="info.html" class="active">Информация</a></li>
   <li><a href="foto-video.html">Фото и видео</a></li>
   <li><a href="map.html">Карта штата</a></li>
   <li><a href="hostels.html">Гостиницы</a></li>
@@ -20,11 +23,13 @@
 <main class="container">
   <h1 class="visually-hidden">Sedona</h1>
 <img src="img/index.arisona-photo.jpg" width="1200" height="780" alt="Фото Аризоны">
-<p><b>Седона - небольшой городок в Аризоне,<br>
-заслуживающий большего!</b></p>
+<p class="advantage">Седона &mdash; небольшой городок в Аризоне,<br>
+заслуживающий большего!</p>
+
 <section class="reasons">
  <h2 class="visually-hidden">Причины</h2>
- <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+ <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+
   <ul class="reasons-list">
     <li class="reasons-item">
       <h3>Настоящий городок</h3>
@@ -53,6 +58,7 @@
     </li>
 </ul>
 </section>
+<div class="index-columns-1">
 <section class="conditions">
   <h2 class="visually-hidden">Условия</h2>
 <ul class="conditions-list">
@@ -70,11 +76,13 @@
   </li>
 </ul>
 </section>
+</div>
 <section class="hostels">
   <h2 class="visually-hidden">Бронирование</h2>
-   <a href="https://hostels.html"><strong>Заинтересовались?</strong></a>
-   <p>Укажите предполагаемые даты поездки,<br>
+   <p class="interest">Заинтересовались?</p>
+   <p class="travel-date">Укажите предполагаемые даты поездки,<br>
    и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+<button class="button hostels-button" type="button">Поиск гостиницы в Седоне</button>
 </section>
 <section class="map">
 <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -82,7 +90,7 @@
 </section>
 </main>
   <footer class="main-footer">
-  <p>#VISITSEDONA</p>
+  <span>#VISITSEDONA</span>
 <div class="footer-social">
  <ul>
   <li><a class="social-button" href="#">Твиттер</a></li>
@@ -96,21 +104,21 @@
 </p>
   </footer>
  <section class="modal modal-hostels">
-  <h2>Поиск гостиницы в Седоне</h2>
+  <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
   <form class="search-hotels" metod="post" action="https://echo.htmlacademy.ru">
     <p>
-      <label for="search-hotels-arrival">Дата заезда:</label>
-      <input id="search-hotels-arrival" type="text" name="arrival" placeholder="24 апреля 2017">
+      <label  class="for-font" for="search-hotels-arrival">Дата заезда:</label>
+      <input class="for-font" id="search-hotels-arrival" type="text" name="arrival" placeholder="24 апреля 2017">
       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
     </p>
     <p>
-      <label for="search-hotels-departure">Дата выезда:</label>
-      <input id="search-hotels-departure" type="text" name="departure" placeholder="4 июля 2017">
+      <label class="for-font" for="search-hotels-departure">Дата выезда:</label>
+      <input class="for-font" id="search-hotels-departure" type="text" name="departure" placeholder="4 июля 2017">
       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
     </p>
     <p>
       <label for="search-hotels-adults">Взрослые</label>
-      <button type="minus">-</button><input id="search-hotels-adults" type="text" name="adults" placeholder="2"><button type="plus">+</button>
+      <button  type="minus">-</button><input id="search-hotels-adults" type="text" name="adults" placeholder="2"><button type="plus">+</button>
 
     </p>
     <p>
@@ -118,7 +126,7 @@
       <button type="minus">-</button><input id="search-hotels-children" type="text" name="children" placeholder="0"><button type="plus">+</button>
 
     </p>
-    <button type="enter">Войти</button>
+    <button class="button-enter" type="enter">Найти</button>
   </form>
 </section>
   </body>
