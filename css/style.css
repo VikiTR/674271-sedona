@@ -10,22 +10,66 @@ color: #333333;
 text-transform: uppercase;
 
 background-color: #f1f1f1;
+background-size: 1280 auto;
 }
 
 a {
   text-decoration: none;
 }
 
+.main-haeder {
+margin-bottom: 22px;
+min-height: 56px;
+}
+
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 14px;
   line-height: 26px;
   color: #000000;
 
   background-color: #ffffff;
+
+  min-height: 56px;
+}
+
+.main-haeder-logo {
+  order: 2;
+
+  width: 138px;
+  height: 70px;
+  display: block;
+}
+
+.main-navigation-wrapper {
+ width: 100%;
+ margin-bottom: 22px;
+ background-color: #ffffff;
+}
+
+.container {
+ width: 1200px;
+ margin: 0 auto;
+ padding: 0 0px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .site-navigation {
+  width: 1200px;
+
+
  list-style: none;
+ margin: 0;
+ padding: 0;
+ min-height: 56px;
 }
 
 .site-navigation a {
@@ -57,22 +101,82 @@ a {
   text-align: center;
 }
 
-.reasons-list,
-.conditions-list {
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  min-height: 256;
 }
+
+.conditions-list {
+list-style: none;
+display: flex;
+padding-top: 46px;
+padding-bottom: 64px;
+
+}
+
 .reasons-item,
 .conditions-item {
   text-align: center;
+  width: 400px;
 }
 
+
+
+.item-1,
+.item-2 {
+  background-color: #81b3d2;
+}
+
+.item-1 {
+ background-image: url(../img/index-background-01.jpg);
+ background-position-y: top;
+ background-position-x: 400px;
+ background-repeat: no-repeat;
+ width: 100%;
+
+}
+.item-1-wrapper
+{
+  width:400px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+}
 .reasons-item h3,
 .conditions-item h3 {
   font-size: 18px;
   line-height: 21px;
 }
 
+.item-2 {
+  background-image: url(../img/reason-background-1-1.jpg);
+  background-position-y: top;
+  background-position-x: left;
+  padding-left: 780px;
+  background-repeat: no-repeat;
+list-style: none;
+padding-top: 46px;
+padding-bottom: 64px;
+width: 100%
+}
+
+.item-3,
+.item-4,
+.item-5 {
+width: 400px;
+padding-top: 48px;
+padding-bottom: 64px;
+}
+
+
 .index-columns-1 {
+  display: flex;
  color: #333333;
 
  background-color: #ffffff;
@@ -120,6 +224,9 @@ background-color: #503e33;
 }
 
 .main-footer {
+  margin-top: 36px;
+  padding: 36px 0;
+  min-height: 120px;
   color: #000000;
 
   background-color: #ffffff;
@@ -128,7 +235,19 @@ background-color: #503e33;
   background-repeat: repeat;
 }
 
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.citation {
+  margin: 0;
+  width: 400px;
+}
+
 .footer-social {
+ width: 400px;
+
   text-align: center;
 }
 
@@ -141,6 +260,7 @@ background-color: #503e33;
 }
 
 .footer-website {
+  width: 400px;
   text-align: right;
 }
 
@@ -203,10 +323,33 @@ background-color: #503e33;
  }
 
 .parameter-selection {
+  padding-top: 14px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-bottom: 19px;
+
  background-color: #ffffff;
  background-image: url(../img/catalog-filter-background.jpg);
  background-position: 0 0;
  background-repeat: repeat;
+}
+
+.parameter-selection .container {
+display: flex;
+}
+
+.infrastructure {
+  width: 240px;
+}
+
+.type-housing {
+  width: 288px;
+  margin-right: 200px;
+  margin: 0;
+}
+
+.cost {
+  width: 328px;
 }
 
 .menu-hostels {
@@ -224,6 +367,10 @@ background-color: #503e33;
 
 .without-dots {
   list-style: none;
+}
+
+.found{
+  display: flex;
 }
 
 .found h3 {
@@ -315,4 +462,62 @@ color: #000000;
 
 .active a {
   color: #81b3d2;
+}
+
+.hostel-typ-list {
+  list-style: none;
+}
+
+.container-hostel .container{
+display: flex;
+padding: 30px 73px;
+}
+
+.amara{
+  width: 165px;
+}
+
+.amara-book {
+  width: 363px;
+  margin-right: 417px;
+}
+
+.amara-stars {
+width: 111px;
+}
+
+.hostel-typ-item .container{
+display: flex;
+padding: 30px 73px;
+}
+
+.desert{
+  width: 165px;
+}
+
+.desert-book {
+  width: 363px;
+  margin-right: 417px;
+}
+
+.desert-stars {
+width: 111px;
+}
+
+.apartment-typ-item .container{
+display: flex;
+padding: 30px 73px;
+}
+
+.villas{
+  width: 165px;
+}
+
+.villas-book {
+  width: 363px;
+  margin-right: 417px;
+}
+
+.villas-stars {
+width: 111px;
 }
