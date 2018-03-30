@@ -69,14 +69,16 @@ min-height: 56px;
  flex-wrap: wrap;
 
  width: 100%;
- margin-bottom: 22px;
+ padding-bottom: 22px;
  background-color: #ffffff;
+ margin: 0;
+ min-width: 56px;
 }
 
 .container {
  width: 1200px;
- margin: 0 auto;
- padding: 0 0px;
+ margin: 0;
+ padding: 0 0;
 }
 
 
@@ -89,7 +91,7 @@ min-height: 56px;
  list-style: none;
  margin: 0;
  padding: 0;
- min-height: 56px;
+
 }
 
 .site-navigation-1 {
@@ -101,7 +103,6 @@ min-height: 56px;
   list-style: none;
   margin: 0;
   padding: 0;
-  min-height: 56px;
 
 
 }
@@ -110,6 +111,7 @@ min-height: 56px;
 .site-navigation-1 a {
   display: block;
   padding: 15px 70px;
+  margin: 0;
 
  color: #000000;
  }
@@ -128,11 +130,17 @@ min-height: 56px;
 }
 
 .advantage {
+  background-image: url(../img/index.arisona-photo.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
   text-align: center;
+  margin: 0;
+  padding-top: 610px;
 }
 
 .five-reasons {
@@ -279,6 +287,9 @@ background-color: #503e33;
 .main-footer .container {
   display: flex;
   justify-content: space-between;
+
+  margin: 0;
+  width: 1200px;
 }
 
 .citation {
@@ -455,16 +466,6 @@ border: none;
   list-style: none;
 }
 
-.found{
-  display: flex;
-}
-
-.found h3 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-}
-
 .parameter-selection-button {
   font: inherit;
 
@@ -473,7 +474,7 @@ border: none;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: transparent;
-  border: 2px solid wwhite;
+  border: 2px solid white;
 }
 
 .parameter-selection-button:hover {
@@ -525,6 +526,32 @@ border: none;
 .hostels-sorting {
   font-size: 12px;
   line-height: 18px;
+  padding-top: 34px;
+  margin: 0;
+}
+
+.found{
+  display: flex;
+  min-height: 86px;
+  margin: 0;
+}
+
+.found h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-right: 45px;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 73px;
+}
+
+.main-menu {
+  display: flex;
+  width: 288px;
+  justify-content: space-between;
+  padding-top: 34px;
+  margin: 0;
 }
 
 .main-menu a {
@@ -533,47 +560,66 @@ border: none;
   color: #d1d1d1;
 }
 
-.main-menu a:hover {
+.for-dotted a {
+border-bottom: 1px dotted #d1d1d1;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
   color: #c4dcea;
+  border-bottom: 1px dotted #c4dcea;
 }
 
 .main-menu a:active {
 color: #000000;
-
+border-bottom: none;
 }
+
 
 .main-menu {
   list-style: none;
+
 }
 
 .active a {
   color: #81b3d2;
 }
 
-.hostel-typ-list {
+.switch {
   list-style: none;
+
+  display: flex;
+  margin: 0;
+  width: 240px;
+  padding-right: 73px;
+  padding-top: 38px;
+
 }
+
+
 
 .container-hostel .container{
 display: flex;
 padding: 30px 73px;
 
 margin: 0;
-
-border-bottom: 1px solid #e5e5e5;
 }
 
 .amara{
   width: 165px;
+
 }
 
 .amara-book {
   width: 363px;
   margin-right: 417px;
+
 }
 
 .amara-stars {
 width: 111px;
+margin: 0;
+text-align: right;
 }
 
 .hostel-typ-item .container{
@@ -592,6 +638,9 @@ padding: 30px 73px;
 
 .desert-stars {
 width: 111px;
+margin: 0;
+text-align: right;
+
 }
 
 .apartment-typ-item .container{
@@ -610,6 +659,9 @@ padding: 30px 73px;
 
 .villas-stars {
 width: 111px;
+margin: 0;
+text-align: right;
+
 }
 
 
