@@ -48,9 +48,9 @@ input[type="checkbox"].visually-hidden{
   font-size: 14px;
   line-height: 26px;
   color: #000000;
+
   background-color: #ffffff;
   width: 1200px;
-  margin-bottom: -22px;
 }
 
 .main-haeder-logo {
@@ -88,13 +88,9 @@ input[type="checkbox"].visually-hidden{
 
 .site-navigation {
 
-display: flex;
-
-list-style: none;
-
-margin: 0;
-
-padding-left: 72px;
+  display: flex;
+  list-style: none;
+  margin: 0;
 }
 .site-navigation-1 a {
   text-align: right;
@@ -105,25 +101,25 @@ padding-left: 72px;
 }
 
 .nav-fotovideo{
-  width: 220px;
+  width: 239px;
   margin: 0;
 }
 
 .site-navigation-1 {
   display: flex;
-  justify-content: flex-end;
+justify-content: flex-end;
   list-style: none;
   margin: 0;
 }
 
 .nav-map {
-  width: 156px;
+  width: 239px;
   margin: 0;
   padding-left: 20px;
 }
 
 .nav-hostel {
-  width: 246px;
+  width: 239px;
   margin: 0;
 }
 
@@ -152,15 +148,14 @@ padding-left: 72px;
   background-image: url(../img/index.arisona-photo.jpg);
   background-repeat: no-repeat;
   width: 1200px;
+
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
   text-align: center;
   margin: 0;
-  padding-top: 570px;
-  padding-bottom: 10px;
-  background-position-y: -57px;
+  padding-top: 610px;
 }
 
 .five-reasons {
@@ -177,10 +172,15 @@ padding-left: 72px;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 53px;
+  min-height: 256;
 }
 
-.conditions-list {list-style: none;display: flex;padding-top: 58px;padding-bottom: 64px;padding-left: 0;}
+.conditions-list {
+list-style: none;
+display: flex;
+padding-top: 46px;
+padding-bottom: 64px;
+}
 
 .reasons-item,
 .conditions-item {
@@ -196,10 +196,9 @@ padding-left: 72px;
 
 .item-1 {
  background-image: url(../img/index-background-01.jpg);
- background-position-y: -40px;
- background-position-x: 401px;
+ background-position-y: top;
+ background-position-x: 400px;
  background-repeat: no-repeat;
- background-size: 77%;
  width: 100%;
  min-height: 256px;
 }
@@ -207,30 +206,25 @@ padding-left: 72px;
 .item-1-wrapper{
   width:400px;
   padding-top: 46px;
-  padding-bottom: 50px;
-  color: white;
+  padding-bottom: 64px;
 }
-.conditions-item h3 {
-  padding-top:22px;
-}
+
 .reasons-item h3,
 .conditions-item h3 {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 21px;
-  padding-bottom: 13px;
 }
 
 .item-2 {
   background-image: url(../img/reason-background-1-1.jpg);
   background-position-y: top;
   background-position-x: left;
-  padding-left: 799px;
+  padding-left: 780px;
   background-repeat: no-repeat;
   list-style: none;
   padding-top: 46px;
-  padding-bottom: 49px;
+  padding-bottom: 64px;
   width: 100%;
-  color: white;
 }
 
 .item-3,
@@ -250,11 +244,10 @@ padding-left: 72px;
 }
 
 .interest {
-  font-size: 30px;
+  font-size: 23px;
   line-height: 26px;
   color: #333333;
   text-align: center;
-  padding-top: 10px;
 }
 
 .travel-date {
@@ -263,7 +256,6 @@ padding-left: 72px;
   color: #333333;
   text-align: center;
   font-weight: normal;
-  padding-bottom: 31px;
 }
 
 .map {
@@ -272,7 +264,7 @@ padding-left: 72px;
 .hostels-button {
  font: inherit;
  min-height: 86px;
- width: 568px;
+  width: 568px;
  text-align: center;
  display: inline-block;
  line-height: 86px;
@@ -281,8 +273,9 @@ padding-left: 72px;
  text-transform: uppercase;
  background-color: #766357;
  border: none;
+
  margin-left: 316px;
- font-size: 21px;
+
 }
 
 .hostels-button:hover {
@@ -307,7 +300,7 @@ padding-left: 72px;
 
 .main-footer .container {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin: 0;
   width: 1200px;
   min-height: 120px;
@@ -319,7 +312,6 @@ padding-left: 72px;
   width: 400px;
   text-align: center;
   padding-top: 47px;
-  font-size: 21px;
 }
 
 .footer-social {
@@ -372,7 +364,7 @@ background-color: #5596be;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 102px;
+  width: 400px;
 }
 
 .letter {
@@ -382,8 +374,6 @@ background-color: #5596be;
 .logo-html-academy {
     background-color: #ffffff;
     fill: #000000;
-    width: 117px;
-    height: 50px;
 }
 
 .logo-html-academy:hover,
@@ -978,7 +968,7 @@ text-align: right;
   background-repeat: repeat;
 }
 .search-hotels label {
-  width: 160px;
+  width:200px;
 }
 .search-hotels input[type="text"] {
   font: inherit;
@@ -1007,10 +997,11 @@ text-align: right;
 .search-hotels {
   display: flex;
   flex-wrap: wrap;
+
   margin: 0;
   margin-bottom: 29px;
-  padding-left: 46px;
-  padding-top: 39px;
+padding-left: 50px;
+padding-top: 50px;
 }
 
 
@@ -1079,18 +1070,21 @@ text-align: right;
 
 .button-enter {
   font: inherit;
+
   min-width: 458px;
   min-height: 58px;
   text-align: center;
   display: inline-block;
+
   color: #ffffff;
   text-transform: uppercase;
   vertical-align: baseline;
+
   background-color: #81b3d2;
   border: none;
-  margin-top: 43px;
-  font-size: 21px;
-  margin-left: 10px;
+
+  margin-top: 0px;
+
  }
 
  .button-enter:hover,

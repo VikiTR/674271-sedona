@@ -14,15 +14,15 @@
 <div class="main-navigation-wrapper">
  <div class="container">
    <ul class="site-navigation">
-    <li><a href="info.html" class="active">Информация</a></li>
-    <li><a href="foto-video.html">Фото и видео</a></li>
+    <li class="nav-info"><a href="info.html" class="active">Информация</a></li>
+    <li class="nav-fotovideo"><a href="foto-video.html">Фото и видео</a></li>
   </ul>
-    <p><a class="main-header-logo">
+    <p><a class="main-header-logo" href="index.html">
       <img src="img/index.logo.png" width="138" height="70" alt="Логотип седоны">
     </a></p>
   <ul class="site-navigation-1">
-    <li><a href="map.html">Карта штата</a></li>
-    <li><a href="hostels.html">Гостиницы</a></li>
+    <li class="nav-map"><a href="map.html">Карта штата</a></li>
+    <li class="nav-hostel"><a href="hostels.html">Гостиницы</a></li>
   </ul>
 </div>
 </div>
@@ -95,7 +95,7 @@
        <input type="checkbox" name="apartment" class="visually-hidden" id="filter-apartment" checked>
        <span class="checkbox-apartment"></span>
        </label>
-       <label class="filter-apartment visually-hiddenl" for="filter-apartment">Апартаменты
+       <label class="filter-apartment visually-hidden" for="filter-apartment">Апартаменты
        <input type="checkbox" name="apartment" class="visually-hidden" id="filter-apartment" checked disabled="disabled>
        <span class="checkbox-apartment"></span>
        </label>
@@ -107,8 +107,10 @@
   <h2 class="visually-hidden">Стоимость в сутки (P):</h2>
    <fieldset class="without-bord">
      <legend>Стоимость в сутки (P):</legend>
-
-
+     <p><img src="img/cost-diapason.png" alt="диапазон стоимости" width="314" height="32"></p>
+ <div class="slider-wrapper">
+    <input type="range" multiple min="0" max="4000" step="500" value="3000">
+</div>
    </fieldset>
     <button type="submit" class="parameter-selection-button button">Показать</button>
  </div>
@@ -131,6 +133,7 @@
   </ul>
 
 </section>
+
 
 <hr class="separator">
 <section class="hostel-typ">
@@ -159,7 +162,7 @@
 </div>
 <hr class="separator">
 
-  <div class=hostel-typ-item>
+  <div class="hostel-typ-item">
     <div class="container">
 
    <div class="desert"><img src="img/Desert-quail-inn.jpg" wigth="135" heigth="90" alt="Desert Quail Inn"></div>
