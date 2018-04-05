@@ -424,6 +424,7 @@ input[type="checkbox"].visually-hidden {
   margin: 0;
   width: 1200px;
   min-height: 120px;
+  height: 1px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1261,6 +1262,15 @@ input[type="checkbox"]:disabled+span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 345px;
+}
+
+.search-hotels p:not(:last-of-type) input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.search-hotels p:not(:last-of-type) input[type="text"]:focus {
+  background-color: white;
+  outline-color: #e5e5e5;
 }
 
 .search-hotels input:hover {
