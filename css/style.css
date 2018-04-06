@@ -282,6 +282,8 @@ input[type="checkbox"].visually-hidden {
   padding-bottom: 12px;
   font-size: 21px;
   line-height: 21px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .conditions-item h3 {
